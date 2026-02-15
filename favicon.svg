@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="kg" x1="16" y1="8" x2="25" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f0916c"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="4" fill="#0b0f19"/>
+  <text x="16" y="22" font-family="JetBrains Mono, monospace" font-size="14" font-weight="500" text-anchor="end" fill="#38bdf8">A</text>
+  <text x="16" y="22" font-family="JetBrains Mono, monospace" font-size="14" font-weight="500" text-anchor="start" fill="url(#kg)">K</text>
+</svg>
