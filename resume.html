@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Adam Karp</title>
+  <meta name="description" content="Resume of Adam Karp — Plasma Physics, Electric Propulsion, and Engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://adkarp.github.io/resume.html">
+  <meta property="og:title" content="Resume — Adam Karp">
+  <meta property="og:description" content="Resume of Adam Karp — plasma physicist, electric propulsion researcher, and computational engineer at George Washington University.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Resume — Adam Karp">
+  <meta name="twitter:description" content="Resume of Adam Karp — plasma physicist, electric propulsion researcher, and computational engineer.">
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid"></div>
+  <canvas id="plasma-canvas"></canvas>
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-glow bg-glow--3"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">adam<span>karp</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="resume.html" class="nav__link active">Resume</a></li>
+      <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+    </ul>
+    <button class="nav__toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Resume Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="resume-header reveal">
+        <h1 class="resume-header__name">Adam Karp</h1>
+        <p class="resume-header__title">Graduate Researcher — Plasma Physics & Electric Propulsion</p>
+        <div class="resume-header__contact">
+          <span>Washington, D.C. Metro Area</span>
+          <a href="https://github.com/adkarp" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/adkarp" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Experience</h2>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Graduate Researcher</h3>
+            <span class="resume-entry__date">Aug 2024 — Present</span>
+          </div>
+          <p class="resume-entry__org">Micropropulsion and Nanotechnology Laboratory — George Washington University</p>
+          <ul class="resume-entry__details">
+            <li>Developed a multi-physics package in Python to simulate hypersonic, compressible flow of a weakly-ionized air plasma for air-breathing electric propulsion in the Lower Mesosphere (70–120 km) using a reduced-order magneto-hydrodynamic model over a non-uniform curvilinear mesh.</li>
+            <li>Translated complex physical phenomena into a reduced-order model to allow for rapid simulation results while maintaining meaningful, physical accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Joint-Collaboration Research Intern</h3>
+            <span class="resume-entry__date">Jun 2024 — Aug 2024</span>
+          </div>
+          <p class="resume-entry__org">Princeton Plasma Physics Laboratory, HTX — Princeton University</p>
+          <ul class="resume-entry__details">
+            <li>Upgraded a legacy thrust measurement stand to attain accurate measurements of new ranges of thrust provided from electric plasma thrusters.</li>
+            <li>Developed a calibration routine to obtain reproducible, accurate results.</li>
+            <li>Cultivated proper laboratory skills working with large vacuum chambers, high-vacuum systems, and associated experimental materials in a national laboratory environment.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Undergraduate Research Assistant</h3>
+            <span class="resume-entry__date">Jan 2023 — Jun 2024</span>
+          </div>
+          <p class="resume-entry__org">Micropropulsion and Nanotechnology Laboratory — George Washington University</p>
+          <ul class="resume-entry__details">
+            <li>Designed, developed, and simulated an Electron Beam Generator for plasma neutralization.</li>
+            <li>Conducted testing of an air-breathing, pulsed electric plasma thruster.</li>
+            <li>Conducted vacuum chamber maintenance, high-voltage and high-current circuit use, design, and fabrication, and thrust stand adjustments and repairs.</li>
+            <li>Conducted plasma-based air-purification testing using filters to obtain approximate ion densities produced.</li>
+            <li>Developed an ExB probe.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Civil and Structural Engineering Intern</h3>
+            <span class="resume-entry__date">May 2022 — Aug 2022</span>
+          </div>
+          <p class="resume-entry__org">Performance Engineering Inc. — Charlevoix, MI</p>
+          <ul class="resume-entry__details">
+            <li>Worked as an on-site inspector for water and sewer pipe installation under local government and MDOT projects.</li>
+            <li>Conducted nuclear density testing and soil inspection techniques.</li>
+            <li>Assisted with program management involving internal and external stakeholders and conducted financial analysis of several programs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Teaching Experience -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Teaching Experience</h2>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Graduate Instructional Assistant — Engineering Computations I & II</h3>
+            <span class="resume-entry__date">Aug 2024 — Present</span>
+          </div>
+          <p class="resume-entry__org">George Washington University</p>
+          <ul class="resume-entry__details">
+            <li>Co-developed course infrastructure by designing Python-based assignments in Jupyter Notebooks.</li>
+            <li>Developed a grading workflow to locally autograde Jupyter Notebooks utilizing a Linux-based infrastructure.</li>
+            <li>Tutored and mentored freshmen and sophomore engineering students in computational thinking, covering data analytics, dynamics, and linear algebra.</li>
+            <li>Co-developed course adjustments addressing the rise of AI and conveyed to students the proper use of AI in academic and professional settings.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Education</h2>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Master of Science in Electrical Engineering</h3>
+            <span class="resume-entry__date">Aug 2024 — Present</span>
+          </div>
+          <p class="resume-entry__org">George Washington University — Washington, D.C.</p>
+          <ul class="resume-entry__details">
+            <li>Concentration in Electronics, Photonics, and MEMS</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Bachelor of Science in Mechanical Engineering</h3>
+            <span class="resume-entry__date">Aug 2020 — May 2024</span>
+          </div>
+          <p class="resume-entry__org">George Washington University — Washington, D.C.</p>
+          <ul class="resume-entry__details">
+            <li>Concentration in Aerospace Engineering, Minor in Physics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Skills</h2>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">Software</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">Fusion 360</span>
+            <span class="skill-tag">Solid Edge</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">Civil3D</span>
+            <span class="skill-tag">NI LabVIEW</span>
+            <span class="skill-tag">Markdown</span>
+            <span class="skill-tag">Microsoft Office</span>
+            <span class="skill-tag">MacOS</span>
+            <span class="skill-tag">Windows</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">Laboratory</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Plasma Diagnostics</span>
+            <span class="skill-tag">Vacuum Systems</span>
+            <span class="skill-tag">HV/HC Circuit Fabrication</span>
+            <span class="skill-tag">Oscilloscope Operation</span>
+            <span class="skill-tag">Soldering</span>
+            <span class="skill-tag">OES</span>
+            <span class="skill-tag">SEM</span>
+            <span class="skill-tag">EDS</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">Technical</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Simulation & Data Analysis</span>
+            <span class="skill-tag">Circuit Design</span>
+            <span class="skill-tag">Electrodynamic Systems</span>
+            <span class="skill-tag">Mechanical Design</span>
+            <span class="skill-tag">Experimental Methods</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">AI Workflows & Tools</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">Antigravity</span>
+            <span class="skill-tag">Google Gemini</span>
+            <span class="skill-tag">Perplexity AI</span>
+            <span class="skill-tag">Comet</span>
+            <span class="skill-tag">Ollama</span>
+            <span class="skill-tag">NotebookLM</span>
+            <span class="skill-tag">GitHub Copilot</span>
+            <span class="skill-tag">JupyterAI</span>
+            <span class="skill-tag">Anthropic APIs</span>
+            <span class="skill-tag">ChatGPT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patents & Publications -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Patents & Publications</h2>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Cathode Side-Feeding in Micro-Cathode Arc Thruster</h3>
+            <span class="resume-entry__date">2024</span>
+          </div>
+          <p class="resume-entry__org">Provisional Patent — Duppada, Taploo, Karp, Spinelli, Soni, Keidar</p>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Side Feeding Mechanism for Micro Cathode Arc Thruster</h3>
+            <span class="resume-entry__date">2024</span>
+          </div>
+          <p class="resume-entry__org">Journal of Electric Propulsion (preprint) — Duppada, Taploo, Soni, Karp, Spinelli, Keidar</p>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry__header">
+            <h3 class="resume-entry__role">Characterization of Side Feeding Mechanism for Micro Cathode Arc Thruster</h3>
+            <span class="resume-entry__date">2024</span>
+          </div>
+          <p class="resume-entry__org">The 38th International Electric Propulsion Conference — Duppada, Taploo, Spinelli, Karp, Keidar</p>
+        </div>
+      </div>
+
+      <!-- Relevant Coursework -->
+      <div class="resume-section reveal">
+        <h2 class="resume-section__title">Relevant Coursework</h2>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">Graduate</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Applied Electromagnetics</span>
+            <span class="skill-tag">Microwave Theory</span>
+            <span class="skill-tag">Antenna Theory</span>
+            <span class="skill-tag">Propulsion</span>
+            <span class="skill-tag">Plasma Engineering</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem; font-weight: 500;">Undergraduate</h3>
+          <div class="skills-list">
+            <span class="skill-tag">Fluid Mechanics</span>
+            <span class="skill-tag">Aerodynamics</span>
+            <span class="skill-tag">Orbital Mechanics</span>
+            <span class="skill-tag">Electromagnetic Theory</span>
+            <span class="skill-tag">Classical Mechanics</span>
+            <span class="skill-tag">Quantum Mechanics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <a href="https://github.com/adkarp" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/adkarp" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer__copy">Designed & built by Adam Karp + Claude</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
