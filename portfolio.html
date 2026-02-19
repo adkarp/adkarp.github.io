@@ -228,7 +228,7 @@
               <div class="project-card__body">
                 <div class="project-card__tags">
                   <span class="project-card__tag">Python</span>
-                  <span class="project-card__tag">Claude API</span>
+                  <span class="project-card__tag">Multi-LLM</span>
                   <span class="project-card__tag">GitHub Actions</span>
                 </div>
                 <h3 class="project-card__title">Tocify</h3>
@@ -245,28 +245,28 @@
                 <button class="project-card__close">Close</button>
               </div>
               <div class="project-card__detail">
-                <p>A fork of the original tocify project with transformative architectural changes. The original generated markdown digests and committed them directly to the repository. I completely reimagined the system with a new delivery architecture and upgraded AI provider.</p>
-                <p><strong>Two Major Architectural Shifts:</strong></p>
+                <p>A fork of the original tocify project with transformative architectural changes. The original was a flat collection of scripts that committed markdown digests back to the repo. I completely reimagined it with a structured codebase, email delivery, and a provider-agnostic AI layer.</p>
+                <p><strong>Core Architectural Shifts:</strong></p>
                 <ul>
-                  <li><strong>1. Delivery Model Redesign:</strong> Original system → commit markdown digests to repo. My fork → generate structured JSON data and deliver beautiful HTML emails to inbox instead. This eliminates repository bloat from weekly digest commits while providing a superior user experience.</li>
-                  <li><strong>2. AI Provider Migration:</strong> Replaced OpenAI with Anthropic Claude for significantly better semantic understanding of research papers and research interests.</li>
+                  <li><strong>Repo Restructure:</strong> Reorganized the original flat-file layout into a clean <code>src/</code> package (core engine, email layer, LLM wrapper, feed checker) and a dedicated <code>settings/</code> folder (feeds, interests, LLM config, prompt template) — separating runnable code from user-customizable config.</li>
+                  <li><strong>Delivery Model Redesign:</strong> Original system → commit markdown digests to repo. My fork → generate structured JSON data and deliver beautiful HTML emails to inbox instead. This eliminates repository bloat from weekly digest commits while providing a superior user experience.</li>
+                  <li><strong>Multi-Provider LLM Abstraction:</strong> Built a generic <code>llm_wrapper.py</code> layer supporting Anthropic, OpenAI, and Google Gemini interchangeably — provider and model configurable via secrets or <code>settings/llm.json</code>.</li>
                 </ul>
                 <p><strong>Supporting Enhancements:</strong></p>
                 <ul>
                   <li><strong>Email Design:</strong> Built responsive HTML email templates with card-based layout, color-coded relevance badges, source attribution pills, and mobile optimization</li>
-                  <li><strong>Data Architecture:</strong> Separated JSON data generation from presentation layer for flexibility and reusability</li>
                   <li><strong>Parser Robustness:</strong> Enhanced RSS parsing to handle diverse date formats across different journal feeds</li>
                 </ul>
                 <p><strong>Skills Demonstrated:</strong></p>
                 <ul>
+                  <li><strong>Codebase Organization:</strong> Imposed clear structure on an unorganized proof-of-concept, separating concerns across <code>src/</code> and <code>settings/</code></li>
                   <li><strong>System Architecture:</strong> Redesigned delivery pipeline to solve a fundamental problem (repo bloat)</li>
-                  <li><strong>API Integration:</strong> Migrated between AI providers and integrated email delivery</li>
+                  <li><strong>API Abstraction:</strong> Designed a provider-agnostic wrapper supporting multiple LLM vendors behind a unified interface</li>
                   <li><strong>Email Engineering:</strong> Built production-ready responsive HTML emails</li>
-                  <li><strong>Full-Stack Thinking:</strong> Addressed backend data processing, architecture decisions, and frontend UX simultaneously</li>
                 </ul>
                 <div class="project-card__tags" style="margin-top: 0.5rem;">
                   <span class="project-card__tag">Python</span>
-                  <span class="project-card__tag">Claude API</span>
+                  <span class="project-card__tag">Multi-LLM</span>
                   <span class="project-card__tag">GitHub Actions</span>
                   <span class="project-card__tag">RSS/XML</span>
                   <span class="project-card__tag">HTML/Email</span>
