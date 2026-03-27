@@ -17,9 +17,9 @@
 
   // Plasma-spectrum colors at low opacity
   const COLORS = [
-    'rgba(56, 189, 248, ',   // cyan — ionized gas
-    'rgba(129, 140, 248, ',  // violet — high-energy emission
-    'rgba(240, 145, 108, ',  // warm peach — thruster exhaust
+    'rgba(34, 211, 238, ',   // cyan — ionized gas
+    'rgba(124, 58, 237, ',   // violet — high-energy emission
+    'rgba(236, 72, 153, ',   // hot magenta — thruster exhaust
   ];
 
   function resize() {
@@ -73,7 +73,7 @@
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = 'rgba(56, 189, 248, ' + opacity + ')';
+          ctx.strokeStyle = 'rgba(34, 211, 238, ' + opacity + ')';
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }

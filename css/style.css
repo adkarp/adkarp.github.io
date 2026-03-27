@@ -341,20 +341,6 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 1rem;
-  position: relative;
-  padding-left: 32px;
-}
-
-.section__label::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 2px;
-  background: var(--plasma-gradient);
-  border-radius: 1px;
 }
 
 .section__title {
