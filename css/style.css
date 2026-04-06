@@ -1144,19 +1144,19 @@ ul {
 }
 
 /* Apply animations to first tool card (EngComp) */
-.project-card[data-category="tool"]:first-of-type .project-icon g:first-child {
+.project-card--engcomp .project-icon g:first-child {
   animation: notebookHighlight 5s ease-in-out infinite;
 }
 
-.project-card[data-category="tool"]:first-of-type .project-icon g:nth-child(2) {
+.project-card--engcomp .project-icon g:nth-child(2) {
   animation: jupyterGlow 5s ease-in-out infinite;
 }
 
-.project-card[data-category="tool"]:first-of-type .project-icon g:nth-child(2) circle:last-child {
+.project-card--engcomp .project-icon g:nth-child(2) circle:last-child {
   animation: processingPulse 5s ease-in-out infinite;
 }
 
-.project-card[data-category="tool"]:first-of-type .project-icon g:last-child {
+.project-card--engcomp .project-icon g:last-child {
   animation: gradesHighlight 5s ease-in-out infinite;
 }
 

@@ -71,8 +71,130 @@
       <!-- Project Grid -->
       <div class="portfolio-grid">
 
-        <!-- EngComp Autograder -->
+        <!-- MCPFolio -->
         <div class="project-card reveal" data-category="tool">
+          <div class="project-card__inner">
+            <div class="card project-card__front">
+              <div class="project-card__image">
+                <div class="project-card__placeholder">
+                  <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" class="project-icon">
+                    <style>
+                      @keyframes mcpNodePulseA {
+                        0%, 100% { opacity: 0.45; }
+                        50%       { opacity: 0.85; }
+                      }
+                      @keyframes mcpNodePulseB {
+                        0%, 100% { opacity: 0.42; }
+                        50%       { opacity: 0.80; }
+                      }
+                      @keyframes mcpDashFlow {
+                        from { stroke-dashoffset: 0; }
+                        to   { stroke-dashoffset: -20; }
+                      }
+                      .mcp-n1 { animation: mcpNodePulseA 3s ease-in-out infinite; }
+                      .mcp-n2 { animation: mcpNodePulseA 3s ease-in-out infinite 1.5s; }
+                      .mcp-n3 { animation: mcpNodePulseB 3s ease-in-out infinite 0.75s; }
+                      .mcp-n4 { animation: mcpNodePulseB 3s ease-in-out infinite 2.25s; }
+                      .mcp-line { animation: mcpDashFlow 2s linear infinite; }
+                    </style>
+
+                    <!-- MCP tool nodes + connecting lines -->
+                    <line class="mcp-line" x1="35" y1="38" x2="78" y2="55" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="3,2"/>
+                    <line class="mcp-line" x1="205" y1="33" x2="162" y2="52" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="3,2"/>
+                    <line class="mcp-line" x1="32" y1="122" x2="78" y2="97" stroke="#ec4899" stroke-width="1" opacity="0.3" stroke-dasharray="3,2"/>
+                    <line class="mcp-line" x1="208" y1="122" x2="162" y2="97" stroke="#ec4899" stroke-width="1" opacity="0.3" stroke-dasharray="3,2"/>
+                    <circle class="mcp-n1" cx="35" cy="38" r="6" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.5"/>
+                    <circle class="mcp-n2" cx="205" cy="33" r="6" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.5"/>
+                    <circle class="mcp-n3" cx="32" cy="122" r="6" fill="#ec4899" stroke="#ec4899" stroke-width="1.5"/>
+                    <circle class="mcp-n4" cx="208" cy="122" r="6" fill="#ec4899" stroke="#ec4899" stroke-width="1.5"/>
+
+                    <!-- Monitor frame -->
+                    <rect x="75" y="22" width="90" height="76" rx="4" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+                    <!-- Screen background -->
+                    <rect x="78" y="25" width="84" height="60" rx="2" fill="#162030" opacity="0.9"/>
+                    <!-- Monitor stand (neck only) -->
+                    <rect x="111" y="98" width="18" height="7" rx="1" fill="#22d3ee" opacity="0.45"/>
+
+                    <!-- Chart inside screen -->
+                    <line x1="84" y1="30" x2="84" y2="80" stroke="#5b6a8a" stroke-width="1" opacity="0.6"/>
+                    <line x1="83" y1="79" x2="160" y2="79" stroke="#5b6a8a" stroke-width="1" opacity="0.6"/>
+                    <line x1="84" y1="60" x2="160" y2="60" stroke="#5b6a8a" stroke-width="0.5" opacity="0.25"/>
+                    <line x1="84" y1="45" x2="160" y2="45" stroke="#5b6a8a" stroke-width="0.5" opacity="0.2"/>
+                    <!-- Area fill under trend -->
+                    <path d="M 87,76 C 98,71 108,64 118,54 C 129,43 143,37 158,33 L 158,79 L 87,79 Z"
+                          fill="#22d3ee" fill-opacity="0.09"/>
+                    <!-- Rising trend line -->
+                    <path d="M 87,76 C 98,71 108,64 118,54 C 129,43 143,37 158,33"
+                          fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round"/>
+                    <!-- Data points -->
+                    <circle cx="100" cy="68" r="2" fill="#22d3ee" opacity="0.85"/>
+                    <circle cx="120" cy="52" r="2" fill="#22d3ee" opacity="0.85"/>
+                    <circle cx="148" cy="37" r="2" fill="#22d3ee" opacity="0.85"/>
+
+                    <!-- Shield / lock badge (local / private) -->
+                    <path d="M 153,108 C 148,104 145,99 145,94 L 145,90 L 161,90 L 161,94 C 161,99 158,104 153,108 Z"
+                          fill="#7c3aed" fill-opacity="0.55" stroke="#7c3aed" stroke-width="1.5"/>
+                    <rect x="149.5" y="97" width="7" height="6" rx="1" fill="#0e1420" opacity="0.85"/>
+                    <path d="M 151,97 L 151,94 Q 151,92 153,92 Q 155,92 155,94 L 155,97" fill="none" stroke="#e2e8f0" stroke-width="1.3" opacity="0.85"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">Python</span>
+                  <span class="project-card__tag">FastMCP</span>
+                  <span class="project-card__tag">LangGraph</span>
+                  <span class="project-card__tag">Ollama</span>
+                  <span class="project-card__tag">Claude / Antigravity</span>
+                </div>
+                <h3 class="project-card__title">MCPFolio</h3>
+                <p class="project-card__desc">
+                  A fully local AI-powered stock analysis and portfolio management tool.
+                  Runs entirely on your machine — no cloud, no telemetry, encrypted storage.
+                </p>
+              </div>
+            </div>
+            <div class="card project-card__back">
+              <div class="project-card__back-title">
+                MCPFolio
+                <button class="project-card__close">Close</button>
+              </div>
+              <div class="project-card__detail">
+                <p>Full-stack local AI finance app. A FastAPI/FastMCP backend exposes 8 MCP tools; a LangGraph ReAct agent orchestrates Ollama-powered analysis; a Vite/Chart.js frontend renders a dashboard, portfolio tracker, and streaming chat advisor.</p>
+                <p><strong>Architecture:</strong></p>
+                <ul>
+                  <li><strong>Backend:</strong> FastMCP (stdio) + FastAPI — 8 tools covering market snapshots, sentiment, news, earnings, macro context, and sector peers</li>
+                  <li><strong>AI Layer:</strong> LangGraph ReAct reasoning loops driving Ollama local inference (llama3.2 default, hot-swappable at runtime)</li>
+                  <li><strong>Frontend:</strong> Vite + vanilla JS with Chart.js — dashboard, encrypted portfolio tracker, and streaming chat advisor with tool-call visibility</li>
+                </ul>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                  <li>30-day trend charts and composite risk scoring (volatility, sentiment, P/E)</li>
+                  <li>AES-256 encrypted portfolio storage (PBKDF2HMAC) — password never persists to disk</li>
+                  <li>Parallel prefetching (3–6 concurrent tool calls) for fast analysis</li>
+                  <li>Zero telemetry — only external call is yfinance for market data</li>
+                </ul>
+                <div class="project-card__tags" style="margin-top: 0.5rem;">
+                  <span class="project-card__tag">Python</span>
+                  <span class="project-card__tag">FastAPI</span>
+                  <span class="project-card__tag">FastMCP</span>
+                  <span class="project-card__tag">LangGraph</span>
+                  <span class="project-card__tag">Ollama</span>
+                  <span class="project-card__tag">Chart.js</span>
+                  <span class="project-card__tag">Vite</span>
+                  <span class="project-card__tag">AES-256</span>
+                  <span class="project-card__tag">Claude / Antigravity</span>
+                </div>
+              </div>
+              <div class="project-card__back-links">
+                <a href="https://github.com/adkarp/mcpfolio" class="btn btn--outline" target="_blank" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EngComp Autograder -->
+        <div class="project-card project-card--engcomp reveal" data-category="tool">
           <div class="project-card__inner">
             <div class="card project-card__front">
               <div class="project-card__image">
@@ -287,6 +409,35 @@
               <div class="project-card__image">
                 <div class="project-card__placeholder">
                   <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" class="project-icon">
+                    <style>
+                      @keyframes btzEquil {
+                        0%, 100% { opacity: 0.7; }
+                        50%       { opacity: 1; }
+                      }
+                      @keyframes btzDrift {
+                        0%, 100% { transform: translateX(0px); }
+                        50%       { transform: translateX(5px); }
+                      }
+                      @keyframes btzEField {
+                        0%, 100% { opacity: 0.55; }
+                        50%       { opacity: 1; }
+                      }
+                      @keyframes btzMCSample {
+                        0%, 20%, 80%, 100% { opacity: 0.1; r: 2.5; }
+                        45%, 55%           { opacity: 1;   r: 3.5; }
+                      }
+                      .btz-equil  { animation: btzEquil  4s ease-in-out infinite; }
+                      .btz-drift  { animation: btzDrift  4s ease-in-out infinite; }
+                      .btz-efield { animation: btzEField 2s ease-in-out infinite; }
+                      .btz-d1 { animation: btzMCSample 5s ease-in-out infinite 0s; }
+                      .btz-d2 { animation: btzMCSample 5s ease-in-out infinite 0.7s; }
+                      .btz-d3 { animation: btzMCSample 5s ease-in-out infinite 1.4s; }
+                      .btz-d4 { animation: btzMCSample 5s ease-in-out infinite 2.1s; }
+                      .btz-d5 { animation: btzMCSample 5s ease-in-out infinite 2.8s; }
+                      .btz-d6 { animation: btzMCSample 5s ease-in-out infinite 3.5s; }
+                      .btz-d7 { animation: btzMCSample 5s ease-in-out infinite 4.2s; }
+                    </style>
+
                     <!-- Background grid lines -->
                     <line x1="25" y1="50" x2="215" y2="50" stroke="#5b6a8a" stroke-width="0.5" opacity="0.3"/>
                     <line x1="25" y1="80" x2="215" y2="80" stroke="#5b6a8a" stroke-width="0.5" opacity="0.3"/>
@@ -301,29 +452,30 @@
                     <polygon points="218,130 209,126 209,134" fill="#5b6a8a" opacity="0.8"/>
 
                     <!-- Equilibrium Maxwellian — blue, centered -->
-                    <path d="M 45,130 C 70,130 90,100 100,68 C 108,45 113,32 120,30 C 127,32 132,45 140,68 C 150,100 170,130 195,130"
+                    <path class="btz-equil" d="M 45,130 C 70,130 90,100 100,68 C 108,45 113,32 120,30 C 127,32 132,45 140,68 C 150,100 170,130 195,130"
                           fill="#22d3ee" fill-opacity="0.13" stroke="#22d3ee" stroke-width="2.5" stroke-linejoin="round"/>
 
-                    <!-- Drifted distribution — orange dashed, shifted right under E field -->
-                    <path d="M 65,130 C 90,130 110,107 120,82 C 128,62 133,50 140,48 C 147,50 153,62 161,82 C 171,107 191,130 215,130"
+                    <!-- Drifted distribution — pink dashed, shifted right under E field -->
+                    <path class="btz-drift" d="M 65,130 C 90,130 110,107 120,82 C 128,62 133,50 140,48 C 147,50 153,62 161,82 C 171,107 191,130 215,130"
                           fill="#ec4899" fill-opacity="0.10" stroke="#ec4899" stroke-width="1.8" stroke-dasharray="5,3" stroke-linejoin="round"/>
 
-                    <!-- Electric field arrow (top-left, indicating drift direction) -->
-                    <line x1="92" y1="18" x2="136" y2="18" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
-                    <polygon points="136,18 128,14 128,22" fill="#7c3aed"/>
-                    <!-- Small tick marks on E-field line to distinguish it -->
-                    <line x1="102" y1="14" x2="102" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
-                    <line x1="114" y1="14" x2="114" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
-                    <line x1="126" y1="14" x2="126" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    <!-- Electric field arrow -->
+                    <g class="btz-efield">
+                      <line x1="92" y1="18" x2="136" y2="18" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+                      <polygon points="136,18 128,14 128,22" fill="#7c3aed"/>
+                      <line x1="102" y1="14" x2="102" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                      <line x1="114" y1="14" x2="114" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                      <line x1="126" y1="14" x2="126" y2="22" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+                    </g>
 
-                    <!-- Monte Carlo sample dots (scattered near the equilibrium curve) -->
-                    <circle cx="105" cy="68" r="2.5" fill="#22d3ee" opacity="0.75"/>
-                    <circle cx="120" cy="34" r="2.5" fill="#22d3ee" opacity="0.85"/>
-                    <circle cx="137" cy="62" r="2.5" fill="#22d3ee" opacity="0.65"/>
-                    <circle cx="153" cy="98" r="2.5" fill="#22d3ee" opacity="0.55"/>
-                    <circle cx="91" cy="92" r="2.5" fill="#22d3ee" opacity="0.55"/>
-                    <circle cx="166" cy="118" r="2.5" fill="#22d3ee" opacity="0.40"/>
-                    <circle cx="75" cy="120" r="2.5" fill="#22d3ee" opacity="0.40"/>
+                    <!-- Monte Carlo sample dots (staggered sampling animation) -->
+                    <circle class="btz-d1" cx="105" cy="68"  r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d2" cx="120" cy="34"  r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d3" cx="137" cy="62"  r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d4" cx="153" cy="98"  r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d5" cx="91"  cy="92"  r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d6" cx="166" cy="118" r="2.5" fill="#22d3ee"/>
+                    <circle class="btz-d7" cx="75"  cy="120" r="2.5" fill="#22d3ee"/>
                   </svg>
                 </div>
               </div>
